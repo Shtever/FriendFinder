@@ -29,6 +29,7 @@
             <h3>Survey!</h3>
             <h4>Answer the following questions to match with someone compatible!</h4>
             <p>1 (Strongly Disagree) to 5 (Strongly Agree)</p>
+            <a href="home.html"><button class="btn btn-danger btn-lg"><span class="fa fa-fire"></span> Home</button></a>
 
         </div>
         <div id="quiz">
@@ -176,7 +177,7 @@
             $.post("/api/friends", newUser)
                 .then(function (data) {
                     console.log("add.html", data);
-                    alert("Adding character...");
+                    alert("You have been added");
                 });
         });
     </script>
