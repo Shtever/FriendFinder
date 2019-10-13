@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- ========================= CSS / BOOTSTRAP / JS ========================= -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Frend Finder</h1>
+            <h3>A Resource for Lonely People!</h3>
+            <hr>
+            <h3>Survey!</h3>
+            <h4>Answer the following questions to match with someone compatible!</h4>
+            <p>1 (Strongly Disagree) to 5 (Strongly Agree)</p>
+
+        </div>
+        <div id="quiz">
+            <h4>Name (Required)</h4><input type="text" id="name" class="form-control" required>
+            <h4>Image URL (Required)</h4><input type="text" id="photo" class="form-control" required>
+<hr> <h4>Please answer the following questions with 1-5</h4>
+<hr>
+            <h4 class="questions">1. I Love Steve.</h4>
+            <select id="q-1">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">2. I Love Steve.</h4>
+            <select id="q-2">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">3. I Love Steve.</h4>
+            <select id="q-3">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">4. I Love Steve.</h4>
+            <select id="q-4">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">5. I Love Steve.</h4>
+            <select id="q-5">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">6. I Love Steve.</h4>
+            <select id="q-6">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">7. I Love Steve.</h4>
+            <select id="q-7">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">8. I Love Steve.</h4>
+            <select id="q-8">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">9. I Love Steve.</h4>
+            <select id="q-9">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+
+            <h4 class="questions">10. I Love Steve.</h4>
+            <select id="q-10">
+                <option hidden>Please Select a response</option>
+                <option value="1">1 - Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Strongly Agree</option>
+            </select>
+            <hr>
+            <button type="submit" class="btn btn-info btn-lg btn-block" id="submit">Match Me!</button>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var newUser = {
+                name: $("#name").val(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#q-1").val().trim(),
+                    $("#q-2").val().trim(),
+                    $("#q-3").val().trim(),
+                    $("#q-4").val().trim(),
+                    $("#q-5").val().trim(),
+                    $("#q-6").val().trim(),
+                    $("#q-7").val().trim(),
+                    $("#q-8").val().trim(),
+                    $("#q-9").val().trim(),
+                    $("#q-10").val().trim(),
+                ]
+            };
+
+            $.post("/api/friends", newUser)
+                .then(function (data) {
+                    console.log("add.html", data);
+                    alert("Adding character...");
+                });
+        });
+    </script>
+
+</body>
+
+</html>
