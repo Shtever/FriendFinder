@@ -187,6 +187,7 @@
             }).then(function (response) {
 
                 var newU = newUser.scores
+                var matches = []
                 // ======================FOR LOOP - For each entry in 'users'.....==========
                 for (var i = 0; i < response.length; i++) {
                     var score = 0
@@ -196,8 +197,25 @@
                     }
                     // console log all users and their relative scores //
                     console.log(response[i].name + "'s score: " + score);
-                }
 
+                    // ============== Create 'totals' object for names and scores ============//
+                    var totals = {
+                        name: response[i].name,
+                        score: score
+                    }
+                    // push 'totals' to matches array
+                    matches.push(totals);
+                }
+                // Sort 'matches' by score
+                matches.sort(function (a, b) {
+                    return a.score - b.score;
+                });
+                console.log(matches)
+                if (matches[0].name = newUser.name) {
+                    console.log("YOUR MATCH: " + matches[1].name);
+                } else {
+                    console.log("YOUR MATCH: " + matches[0].name);
+                }
             });
 
             // ====================Post responses in friends.js ============== //
@@ -209,7 +227,6 @@
                 })
         })
     </script>
-
 </body>
 
 </html>
