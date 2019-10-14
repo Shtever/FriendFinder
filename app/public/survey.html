@@ -16,144 +16,151 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
-
     <div class="container">
         <div class="jumbotron">
-            <h1>Frend Finder</h1>
+            <h1>Friend Finder</h1>
             <h3>A Resource for Lonely People!</h3>
             <hr>
             <h3>Survey!</h3>
             <h4>Answer the following questions to match with someone compatible!</h4>
             <p>1 (Strongly Disagree) to 5 (Strongly Agree)</p>
             <a href="home.html"><button class="btn btn-danger btn-lg"><span class="fa fa-fire"></span> Home</button></a>
-
         </div>
+        <!-- // ======================================= SURVEY =========================== //  -->
         <div id="quiz">
-            <h4>Name (Required)</h4><input type="text" id="name" class="form-control" required>
-            <h4>Image URL (Required)</h4><input type="text" id="photo" class="form-control" required>
-<hr> <h4>Please answer the following questions with 1-5</h4>
-<hr>
-            <h4 class="questions">1. I Love Steve.</h4>
-            <select id="q-1">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
+            <form>
+                <h4>Name (Required)</h4><input type="text" id="name" class="form-control" required>
+                <h4>Image URL (Required)</h4><input type="text" id="photo" class="form-control" required>
+            </form>
             <hr>
+            <h4>Please answer the following questions with 1-5</h4>
+            <hr>
+            <form>
+                <h4 class="questions">1. I Love Steve.</h4>
+                <select id="q-1" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">2. I Love Steve.</h4>
-            <select id="q-2">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">2. I Love Steve.</h4>
+                <select id="q-2" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">3. I Love Steve.</h4>
-            <select id="q-3">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">3. I Love Steve.</h4>
+                <select id="q-3" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">4. I Love Steve.</h4>
-            <select id="q-4">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">4. I Love Steve.</h4>
+                <select id="q-4" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">5. I Love Steve.</h4>
-            <select id="q-5">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">5. I Love Steve.</h4>
+                <select id="q-5" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">6. I Love Steve.</h4>
-            <select id="q-6">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">6. I Love Steve.</h4>
+                <select id="q-6" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">7. I Love Steve.</h4>
-            <select id="q-7">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">7. I Love Steve.</h4>
+                <select id="q-7" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">8. I Love Steve.</h4>
-            <select id="q-8">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">8. I Love Steve.</h4>
+                <select id="q-8" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">9. I Love Steve.</h4>
-            <select id="q-9">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
+                <h4 class="questions">9. I Love Steve.</h4>
+                <select id="q-9" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
 
-            <h4 class="questions">10. I Love Steve.</h4>
-            <select id="q-10">
-                <option hidden>Please Select a response</option>
-                <option value="1">1 - Strongly Disagree</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 - Strongly Agree</option>
-            </select>
-            <hr>
-            <button type="submit" class="btn btn-info btn-lg btn-block" id="submit">Match Me!</button>
+                <h4 class="questions">10. I Love Steve.</h4>
+                <select id="q-10" required>
+                    <option selected hidden disabled>Please Select a response</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+                <hr>
+                Please verify all fields are filled.
+                <button type="submit" class="btn btn-info btn-lg btn-block" id="submit">Match Me!</button>
+            </form>
         </div>
         <hr>
-
     </div>
 
 
-
+    <!-- ======================== SCRIPT &  BUTTON FUNCTIONALITY ========================= -->
     <script type="text/javascript">
         $("#submit").on("click", function (event) {
             event.preventDefault();
@@ -170,16 +177,37 @@
                     $("#q-7").val().trim(),
                     $("#q-8").val().trim(),
                     $("#q-9").val().trim(),
-                    $("#q-10").val().trim(),
+                    $("#q-10").val().trim()
                 ]
-            };
+            }
+            // ============== Ajaz call to api/users ================== // 
+            $.ajax({
+                url: "api/users",
+                method: "GET"
+            }).then(function (response) {
 
-            $.post("/api/friends", newUser)
+                var newU = newUser.scores
+                // ======================FOR LOOP - For each entry in 'users'.....==========
+                for (var i = 0; i < response.length; i++) {
+                    var score = 0
+                    // =========================== take each answer and compare it to new user. Subtract and use absolute value. 
+                    for (var j = 9; j > -1; j--) {
+                        var score = score += Math.abs(newU[j] - response[i].scores[j])
+                    }
+                    // console log all users and their relative scores //
+                    console.log(response[i].name + "'s score: " + score);
+                }
+
+            });
+
+            // ====================Post responses in friends.js ============== //
+            $.post("/api/users", newUser)
                 .then(function (data) {
-                    console.log("add.html", data);
+                    // console.log(data);
+                    console.log("New User: " + newUser.name)
                     alert("You have been added");
-                });
-        });
+                })
+        })
     </script>
 
 </body>
