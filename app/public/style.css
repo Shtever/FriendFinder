@@ -1,10 +1,65 @@
 .jumbotron {
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
+
 body {
-    background-color: aqua;
+    background-color: maroon;
+    padding: 2%;
 }
 
 html {
-    background-color: red;
+    background-color: black;
+}
+
+#image {
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+}
+
+.questions {
+    color: blanchedalmond;
+}
+
+.instruction {
+    text-align: center;
+}
+
+.modal {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.modal-content {
+    text-align: center;
+    background-color:black;
+}
+
+.modal-header {
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modal-body {
+    font-size: 200%;
+    font-family: 'Permanent Marker', cursive;
+    background-color:black;
+    color: white;
+}
+
+.modal-title {
+    font-size: 200%;
+    font-family: 'Permanent Marker', cursive;
+    background-color:black;
+    color: red;
+}
+
+img {
+    width: 25%;
 }

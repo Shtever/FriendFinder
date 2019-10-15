@@ -5,45 +5,43 @@
     <meta charset="UTF-8">
     <title>Friend Finder</title>
     <!-- ========================= CSS / BOOTSTRAP / JS ========================= -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1>Friend Finder</h1>
-            <h3>A Resource for Lonely People!</h3>
+            <img id="image" src="Friend Findr.png">
             <hr>
-            <h3>Survey!</h3>
             <h4>Answer the following questions to match with someone compatible!</h4>
-            <p>1 (Strongly Disagree) to 5 (Strongly Agree)</p>
             <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-fire"></span> Home</button></a>
         </div>
         <!-- // ======================================= SURVEY =========================== //  -->
         <div id="quiz">
             <form>
-                <h4>Name (Required)</h4><input type="text" id="name" class="form-control" required>
-                <h4>Image URL (Required)</h4><input type="text" id="photo" class="form-control" required>
+                <h4 class="questions">Name (Required)</h4><input type="text" id="name" class="form-control" required>
+                <h4 class="questions">Image URL (Required)</h4><input type="text" id="photo" class="form-control"
+                    required>
             </form>
             <hr>
-            <h4>Please answer the following questions with 1-5</h4>
+            <h4 class="questions instruction">Please answer the following questions with 1-5</h4>
             <hr>
             <form>
-                <h4 class="questions">1. It should be legal for me to physically discipline other people's children.</h4>
+                <h4 class="questions">1. It should be legal for me to physically discipline other people's children.
+                </h4>
                 <select id="q-1" required>
                     <option selected hidden disabled>Please Select a response</option>
                     <option value="1">1 - Strongly Disagree</option>
@@ -76,7 +74,7 @@
                 </select>
                 <hr>
 
-                <h4 class="questions">4. I have </h4>
+                <h4 class="questions">4. I have friends who would help me with somethng that's illegal</h4>
                 <select id="q-4" required>
                     <option selected hidden disabled>Please Select a response</option>
                     <option value="1">1 - Strongly Disagree</option>
@@ -87,7 +85,7 @@
                 </select>
                 <hr>
 
-                <h4 class="questions">5. I Love Steve.</h4>
+                <h4 class="questions">5. I like Smooth Jazz music.</h4>
                 <select id="q-5" required>
                     <option selected hidden disabled>Please Select a response</option>
                     <option value="1">1 - Strongly Disagree</option>
@@ -98,7 +96,7 @@
                 </select>
                 <hr>
 
-                <h4 class="questions">6. I Love Steve.</h4>
+                <h4 class="questions">6. I firmly believe that DMX is "gon' give it to ya" *arf arf*</h4>
                 <select id="q-6" required>
                     <option selected hidden disabled>Please Select a response</option>
                     <option value="1">1 - Strongly Disagree</option>
@@ -109,7 +107,7 @@
                 </select>
                 <hr>
 
-                <h4 class="questions">7. I Love Steve.</h4>
+                <h4 class="questions">7. Climate change is real.</h4>
                 <select id="q-7" required>
                     <option selected hidden disabled>Please Select a response</option>
                     <option value="1">1 - Strongly Disagree</option>
@@ -120,18 +118,18 @@
                 </select>
                 <hr>
 
-                <h4 class="questions">8. I Love Steve.</h4>
+                <h4 class="questions">8. The best Ninja Turtle is:</h4>
                 <select id="q-8" required>
                     <option selected hidden disabled>Please Select a response</option>
-                    <option value="1">1 - Strongly Disagree</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 - Strongly Agree</option>
+                    <option value="1">1. None of them</option>
+                    <option value="2">2. Donatello</option>
+                    <option value="3">3. Michaelangelo</option>
+                    <option value="4">4. Raphael</option>
+                    <option value="5">5. Leonardo</option>
                 </select>
                 <hr>
 
-                <h4 class="questions">9. I Love Steve.</h4>
+                <h4 class="questions">9. I like answering questions using a 1-5 scale.</h4>
                 <select id="q-9" required>
                     <option selected hidden disabled>Please Select a response</option>
                     <option value="1">1 - Strongly Disagree</option>
@@ -152,12 +150,32 @@
                     <option value="5">5 - Strongly Agree</option>
                 </select>
                 <hr>
-                Please verify all fields are filled.
-                <button type="submit" class="btn btn-info btn-lg btn-block" id="submit">Match Me!</button>
+                <p class="questions instruction">Please verify all fields are filled.
+                    <button type="button" data-toggle="modal" data-target="#results-modal"
+                        class="btn btn-primary btn-lg btn-block" id="submit">Match Me!</button>
             </form>
+
+
+            <!-- ============= MODAL ============== -->
+            <div class="modal" role="dialog" id="results-modal" data-target="#results-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">YOUR MATCH:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr>
     </div>
+    <hr>
+    </div>
+
+
 
 
     <!-- ======================== SCRIPT &  BUTTON FUNCTIONALITY ========================= -->
@@ -166,7 +184,7 @@
             event.preventDefault();
             var newUser = {
                 name: $("#name").val(),
-                photo: $("#photo").val().trim(),
+                photo: $("#photo").val(),
                 scores: [
                     $("#q-1").val().trim(),
                     $("#q-2").val().trim(),
@@ -202,6 +220,7 @@
                     // ============== Create 'totals' object for names and scores ============//
                     var totals = {
                         name: response[i].name,
+                        photo: response[i].photo,
                         score: score
                     }
                     // push 'totals' to matches array
@@ -213,12 +232,29 @@
                 });
                 console.log(matches)
                 if (matches[0].name != newUser.name) {
-                    console.log("YOUR MATCH: " + matches[0].name)
-                    alert("YOUR MATCH: " + matches[0].name);
+                    var MATCH = matches[0].name
+                    console.log("YOUR MATCH: " + MATCH)
+                    modalShow();
+                    function modalShow() {
+                        console.log("modal");
+                        console.log(matches[0].photo);
+                        var modalImg = $("<img>");
+                        modalImg.attr("src", matches[0].photo)
+                        $(".modal-body").prepend('<img src=' + matches[0].photo + '>')
+                        $(".modal-body").append('<br>' + MATCH);
+                    };
                 } else {
-                    console.log("YOUR MATCH: " + matches[1].name);
-                    alert("YOUR MATCH: " + matches[1].name);
-
+                    var MATCH = matches[1].name
+                    console.log("YOUR MATCH: " + MATCH);
+                    modalShow();
+                    function modalShow() {
+                        console.log("modal");
+                        console.log(matches[1].photo);
+                        var modalImg = $("<img>");
+                        modalImg.attr("src", matches[1].photo)
+                        $(".modal-body").prepend('<img src=' + matches[1].photo + '>');
+                        $(".modal-body").append('<br>' + MATCH);
+                    };
                 }
             });
 
@@ -227,15 +263,11 @@
                 .then(function (data) {
                     // console.log(data);
                     console.log("New User: " + newUser.name)
-                    modalShow();
+
                 })
 
-                function modalShow() {
-                console.log("modal");
-            };
 
-        
-            })
+        })
     </script>
 </body>
 

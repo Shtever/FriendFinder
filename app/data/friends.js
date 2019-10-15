@@ -2,28 +2,17 @@
 
 var users = [
     {
-        name: "An Antisocial Robot",
+        name: "An Anti-social Robot",
         photo: "https://image-cdn.neatoshop.com/styleimg/87538/none/red/default/418831-20;1558720085t.jpg",
         scores: [1,1,1,1,1,1,1,1,1,1]
     },
     {
-        name: "TWOS",
-        photo: "https://image-cdn.neatoshop.com/styleimg/87538/none/red/default/418831-20;1558720085t.jpg",
-        scores: [2,2,2,2,2,2,2,2,2,2]
-    },
-    {
-        name: "THREES",
-        photo: "https://image-cdn.neatoshop.com/styleimg/87538/none/red/default/418831-20;1558720085t.jpg",
+        name: "Mr. Middle-Of-The-Road",
+        photo: "https://www.spiritofgrace.org/images/2017/nerd_geek_boring_guy_ING_19078_04150.jpg",
         scores: [3,3,3,3,3,3,3,3,3,3]
     },
     {
-        name: "FOURS",
-        photo: "https://image-cdn.neatoshop.com/styleimg/87538/none/red/default/418831-20;1558720085t.jpg",
-        scores: [4,4,4,4,4,4,4,4,4,4]
-    },
-
-    {
-        name: "A Quokka",
+        name: "A Quokka - The happiest animal in the world",
         photo: "https://i.imgur.com/ax6lkYp.jpg",
         scores: [5,5,5,5,5,5,5,5,5,5]
     },
