@@ -31,7 +31,7 @@
             <h3>Survey!</h3>
             <h4>Answer the following questions to match with someone compatible!</h4>
             <p>1 (Strongly Disagree) to 5 (Strongly Agree)</p>
-            <a href="home.html"><button class="btn btn-danger btn-lg"><span class="fa fa-fire"></span> Home</button></a>
+            <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-fire"></span> Home</button></a>
         </div>
         <!-- // ======================================= SURVEY =========================== //  -->
         <div id="quiz">
@@ -180,6 +180,8 @@
                     $("#q-10").val().trim()
                 ]
             }
+            var matches = []
+
             // ============== Ajaz call to api/users ================== // 
             $.ajax({
                 url: "api/users",
@@ -187,7 +189,6 @@
             }).then(function (response) {
 
                 var newU = newUser.scores
-                var matches = []
                 // ======================FOR LOOP - For each entry in 'users'.....==========
                 for (var i = 0; i < response.length; i++) {
                     var score = 0
@@ -211,10 +212,13 @@
                     return a.score - b.score;
                 });
                 console.log(matches)
-                if (matches[0].name = newUser.name) {
-                    console.log("YOUR MATCH: " + matches[1].name);
+                if (matches[0].name != newUser.name) {
+                    console.log("YOUR MATCH: " + matches[0].name)
+                    alert("YOUR MATCH: " + matches[0].name);
                 } else {
-                    console.log("YOUR MATCH: " + matches[0].name);
+                    console.log("YOUR MATCH: " + matches[1].name);
+                    alert("YOUR MATCH: " + matches[1].name);
+
                 }
             });
 
@@ -223,9 +227,15 @@
                 .then(function (data) {
                     // console.log(data);
                     console.log("New User: " + newUser.name)
-                    alert("You have been added");
+                    modalShow();
                 })
-        })
+
+                function modalShow() {
+                console.log("modal");
+            };
+
+        
+            })
     </script>
 </body>
 
