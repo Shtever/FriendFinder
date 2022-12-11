@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Shtever/FriendFinder#readme",
   "dependencies": {
     "ajax": "0.0.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^1.19.3",
     "path": "^0.12.7"
   }
